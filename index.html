@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A codewell Project completed by Victor Evogor">
+    <meta name="author" content="Victor Evogor">
+    <title>Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <style>
+        body{
+            background-color: #0a0a0a;
+            color: #e1e1e1;
+            font-size: 1.2em;
+            font-weight: 500;
+            font-family: "Inter";
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Prata";
+        }
+
+        ul > li{
+            margin-right: 10px;
+        }
+
+        ul > li:last-child{
+            margin-right: 0;
+        }
+
+        #top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+        ul#center-top-ul{
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .btn-btn,ul > li, #left-top{
+            cursor: pointer;
+        }
+
+        .btn-btn{
+            background-color: #fbe850;
+            padding: 6px 10px;
+            color: black;
+            border-radius: 2px;
+        }
+
+        #middle1-display-1{
+            width: 65%;
+        }
+
+        #middle1{
+            margin: 30px 0;
+        }
+
+        .text-fade-light{
+            color: #777;
+        }
+
+        #sponsors{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #showcase{
+            display: flex;
+        }
+
+        #middle-2,footer{
+            background-color: #2e3038;
+        }
+
+        #middle-2-inner{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #middle-2-left{
+            width: 60%;
+            margin-right: 50px;
+        }
+
+        #middle-2-inner p{
+            margin: 20px 0;
+        }
+
+        #middle-2-right{
+            width: 60%;
+        }
+
+        #footer-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #hamburger-menu{
+            display: none;
+        }
+
+        #middle-3-p{
+            width: 50%;
+        }
+
+        @media screen and (max-width: 1024px){
+            #hamburger-menu{
+                display: block;
+            }
+
+            #center-top, #right-top{
+                display: none;
+            }
+            #sponsors{
+                display: grid;
+                grid: repeat(2,1fr)/repeat(3,1fr);
+                grid-gap: 10px;
+            }
+
+            #showcase{
+                display: block;
+            }
+
+            #showcase img{
+                width: 100%;
+            }
+
+            #middle-2-inner{
+                display: block;
+            }
+
+            #middle-2-inner > *{
+                width: 100%;
+            }
+
+        #middle1-display-1{
+            width: 100%;
+        }
+
+        }
+
+        @media  (max-width: 400px) {
+            #sponsors{
+                display: grid;
+                grid: repeat(2,1fr)/repeat(2,1fr);
+                grid-gap: 5px;
+            }
+
+            #middle-3-p{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+        <div id="top" class="p-3 container">
+            <div id="left-top">Victor Evogor</div>
+            <div id="hamburger-menu">
+                <img src="Assets/Hamburger Menu.svg" alt="">
+            </div>
+            <div id="center-top">
+                <ul id="center-top-ul" class="text-fade-light">
+                    <li>Articles</li>
+                    <li>Chats</li>
+                    <li>Awards</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div id="right-top">
+                <div class="btn-btn">Get in touch</div>
+            </div>
+        </div>
+        <div class="container">
+        <div id="middle1" class="container">
+            <div id="middle1-display-1">
+                <h1 class="h1">Helping companies build better, scalable software.</h1>
+                <div class="text-fade-light">
+                    Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and More. 
+                </div>
+            </div>
+            <div id="sponsors" class="my-5">
+                <img src="Assets/Logos/Walmart.svg" alt="" srcset="">
+                <img src="Assets/Logos/JP Morgan.svg" alt="" srcset="">
+                <img src="Assets/Logos/Visa.svg" alt="" srcset="">
+                <img src="Assets/Logos/Tinder.svg" alt="" srcset="">
+                <img src="Assets/Logos/Samsung.svg" alt="" srcset="">
+                <img src="Assets/Logos/Verizon.svg" alt="">
+            </div>
+
+            <div id="showcase" class="container">
+                <div class="showcase-items">
+                    <img src="Assets/Spense.png" alt="" srcset="">
+                    <h3 class="my-3">Spense.com <i class="fa fa-arrow-right" style="font-size: 1em;"></i></h3>
+                    <p class="text-fade-light">
+                        Rethinking the way writters get paid, an open source platform designed to help writters focus more on writting, and less on when and how they'll get paid. Project in collaboration with Codewell.cc
+                    </p>
+                </div>
+                <div class="showcase-items">
+                    <img src="Assets/YelpCamp.png" alt="" srcset="">
+                    <h3 class="my-3">YelpCamp.com <i class="fa fa-arrow-right" style="font-size: 1em;"></i></h3>
+                    <p class="text-fade-light">
+                        Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favorite in 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle-2" >
+        <div class="container py-5" id="middle-2-inner">
+        <div id="middle-2-left">
+            <h3>A co-founder at one of the world's largest communities</h3>
+            <p class="text-fade-light">
+                The combined experience I have working at the top Fortune 500 companies has allowed me to develop a skillset that helps me in not just development, but in every aspect of any bussiness.
+            </p>
+            <p class="text-fade-light">
+                I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to sell yourself as a developer and open them to a whole new world of opportunities.
+            </p>
+        </div>
+        <div id="middle-2-right">
+            <p class="text-fade-light">
+                As a developer, you have everything available to you and all that's holding you back is yourself
+            </p>
+            <p class="text-fade-light">
+                A qoute I live by perfectly illustrates what I mean.
+            </p>
+            <p class="text-fade-light">
+                &quot;How big would you dream, if you <strong>knew</strong> you would'nt fall?&quot;<br>You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're <em>passionate</em> about.
+            </p>
+            <p class="text-fade-light">
+                I'm happy to chat over coffee some time about how I can help your company.
+            </p>
+        </div>
+    </div>
+        </div>
+   
+    <div id="middle-3" class="container py-5">
+        <h3>Interested in working with me?</h3>
+        <p class="text-fade-light"  id="middle-3-p">
+            I'm active on all social media platforms listed below, but you can also contact me through email and I will get back to you within 24-48 hours.
+        </p>
+        <div class="btn-btn my-2" style="display: inline-block;">Get in touch</div>
+    </div>
+    <footer>
+        <div id="footer-inner" class="container py-4">
+            <div id="name-footer">Victor Evogor</div>
+            <div id="footer-media-icons">
+                <img src="Assets/Social Icons/Twitter.svg" alt="">
+                <img src="Assets/Social Icons/LinkedIn.svg" alt="">
+                <img src="Assets/Social Icons/Github.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/815384b62e.js" crossorigin="anonymous"></script>
+</body>
+</html>
